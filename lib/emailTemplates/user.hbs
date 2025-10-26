@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Contacting Edvenswa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background-color: #ffffff;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #019c9d;
+      padding: 30px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    .header p {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+      color: #ffffff;
+    }
+    .content {
+      padding: 40px 30px;
+    }
+    .message {
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    .contact-info {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+      border-left: 4px solid #019c9d;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 30px;
+      text-align: center;
+      border-top: 1px solid #e9ecef;
+    }
+    .footer p {
+      margin: 0;
+      color: #6c757d;
+      font-size: 14px;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .social-icon {
+      background-color: #f1f1f1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #019c9d;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 15px;
+      text-align: center;
+    }
+    .signature {
+      margin-top: 40px;
+    }
+    .highlight {
+      color: #019c9d;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header" style="background-color: #019c9d; color: #ffffff; padding: 30px; text-align: center;">
+      <h1 style="margin: 0; font-size: 28px; font-weight: 600; color: #ffffff;">Thank You for Contacting Us!</h1>
+      <p style="margin: 10px 0 0 0; font-size: 16px; color: #ffffff;">We've received your inquiry and will get back to you shortly</p>
+    </div>
+    
+    <div class="content">
+      <div class="message">
+        <p>Dear {{firstName}},</p>
+        
+        <p>Thank you for reaching out to Edvenswa. We have received your inquiry regarding <span class="highlight">{{helpOption}}</span>.</p>
+        
+        <p>Our team is reviewing your message and one of our representatives will contact you within 24-48 business hours to discuss how we can assist with your needs.</p>
+        
+        <p>If you have any urgent questions in the meantime, please feel free to call us at <a href="tel:877-253-3484" style="color: #019c9d; text-decoration: none;">877-253-3484</a>.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+          <a href="https://kagof/Services" class="btn text-white">Explore Our Services</a>
+
+        </div>
+        
+        <div class="contact-info">
+          <h3>Your Inquiry Details:</h3>
+          <p><strong>Name:</strong> {{firstName}} {{lastName}}<br>
+          <strong>Email:</strong> {{email}}<br>
+          <strong>Phone:</strong> {{phone}}<br>
+          <strong>Company:</strong> {{company}}<br>
+          <strong>Help Option:</strong> {{helpOption}}<br>
+          <strong>Message:</strong> "{{message}}"</p>
+        </div>
+        
+        <div class="signature">
+          <p>Best Regards,<br>
+          <strong>Edvenswa Customer Success Team</strong></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>© {{currentYear}} Edvenswa Enterprises. All rights reserved.</p>
+      <p>11205 Alpharetta Hwy Suite H2 Roswell, GA 30076</p>
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/edvenswa" class="social-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/edvenswa" class="social-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="20" height="20">
+        </a>
+        <a href="https://www.facebook.com/edvenswa" class="social-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" width="20" height="20">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

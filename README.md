@@ -1,0 +1,5 @@
+ Kagof Website
+
+ Copyright Edvenswa
+	
+	

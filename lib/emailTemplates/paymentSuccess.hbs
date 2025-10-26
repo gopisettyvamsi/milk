@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Successful - KAGOF Events</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #16a34a, #059669);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .content {
+      padding: 40px 30px;
+    }
+    .content h2 {
+      color: #16a34a;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .success-box {
+      background: #dcfce7;
+      border-left: 4px solid #16a34a;
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 6px;
+    }
+    .success-box table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .success-box td {
+      padding: 8px 0;
+      font-size: 15px;
+      word-break: break-word;
+    }
+    .success-box td:first-child {
+      font-weight: 600;
+      color: #444;
+      width: 40%;
+      padding-right: 10px;
+    }
+    .success-box td:last-child {
+      text-align: right;
+      color: #555;
+      width: 60%;
+    }
+    .status {
+      display: inline-block;
+      background: #16a34a;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #16a34a;
+      color: #fff !important;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 25px 0;
+      transition: background 0.3s;
+      text-align: center;
+    }
+    .button:hover {
+      background: #059669;
+    }
+    .footer {
+      background: #f8f9fa;
+      padding: 20px 30px;
+      border-top: 1px solid #e9ecef;
+    }
+    .footer hr {
+      border: none;
+      height: 1px;
+      background: #e9ecef;
+      margin: 20px 0;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #777;
+      margin: 0;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .email-container {
+        border-radius: 4px;
+      }
+      .header {
+        padding: 25px 15px;
+      }
+      .logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+      .header h1 {
+        font-size: 20px;
+      }
+      .content {
+        padding: 30px 20px;
+      }
+      .content h2 {
+        font-size: 20px;
+      }
+      .content p {
+        font-size: 15px;
+      }
+      .success-box {
+        padding: 15px;
+        margin: 20px 0;
+      }
+      .success-box td {
+        font-size: 14px;
+        padding: 6px 0;
+      }
+      .success-box td:first-child {
+        width: 45%;
+      }
+      .success-box td:last-child {
+        width: 55%;
+      }
+      .button {
+        padding: 12px 25px;
+        font-size: 15px;
+        width: 100%;
+        margin: 20px 0;
+      }
+      .footer {
+        padding: 15px 20px;
+      }
+    }
+
+@media only screen and (max-width: 400px) {
+      .header {
+        padding: 20px 10px;
+      }
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+      .header h1 {
+        font-size: 18px;
+      }
+      .content {
+        padding: 25px 15px;
+      }
+      .content h2 {
+        font-size: 18px;
+      }
+      .content p {
+        font-size: 14px;
+      }
+      .success-box {
+        padding: 12px;
+      }
+      .success-box td {
+        font-size: 12px;
+        padding: 5px 0;
+        vertical-align: top;
+      }
+      .success-box td:first-child {
+        width: 35%;
+        padding-right: 8px;
+      }
+      .success-box td:last-child {
+        width: 65%;
+        word-break: break-all;
+      }
+      .status {
+        font-size: 11px;
+        padding: 2px 6px;
+      }
+      .button {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+      .footer {
+        padding: 12px 15px;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>KAGOF Events</h1>
+    </div>
+    <div class="content">
+      <h2>Payment Successful</h2>
+      <p>Hi Dr.{{name}},</p>
+      <p>Your payment for <strong>{{event_title}}</strong> was <span class="status">Successful</span></p>
+      <div class="success-box">
+        <table>
+          <tr><td>Event:</td><td>{{event_title}}</td></tr>
+          <tr><td>Amount Paid:</td><td>₹{{amount}}</td></tr>
+          <tr><td>Transaction ID:</td><td>{{transaction_id}}</td></tr>
+          <tr><td>Order ID:</td><td>{{order_id}}</td></tr>
+          <tr><td>Payment Date:</td><td>{{payment_date}}</td></tr>
+        </table>
+      </div>
+      <p>Thank you for your payment! You can view your receipt by clicking the button below:</p>
+<a href="{{appUrl}}/payments/receipt/{{transaction_id}}" class="button">View Receipt</a>
+
+      <p>Regards,<br><strong>KAGOF Team</strong></p>
+    </div>
+    <div class="footer">
+      <hr><p>&copy; {{currentYear}} KAGOF. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "9050:9040"
+    environment:
+      NODE_ENV: production
+    # No volumes here, so the image-baked node_modules stays intact
+    command: npm start
